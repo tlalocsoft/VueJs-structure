@@ -9,12 +9,18 @@
 
 <script>
 export default {
-  props: ["title"],
   //La data es donde se van a crear las variables que van a hacer funcionar nuestro sistema, pueden ser objetos, int, string, etc.
   data() {
     return {
       counter: 0,
     };
+  },
+  //Las properties son Identificadores para usar un solo componente como bloque para distintas partes del sistema
+  props: {
+    title: String,
+    comienzo: {
+      type: Number,
+    },
   },
   //Los metodos son las acciones que se ejecutan con todas las variables que intervienen en el codigo
   methods: {
